@@ -16,7 +16,7 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Simplified Application Started.");
-        System.out.println("Type 'exit' to stop the application (not applicable in non-interactive mode)!!!");
+        System.out.println("Type 'exit' to stop the application (not applicable in non-interactive mode)!!!!");
 
 
         while (true) {
