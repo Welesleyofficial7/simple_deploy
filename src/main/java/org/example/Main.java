@@ -22,13 +22,13 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         while (true) {
-            String input = scanner.nextLine();
-            if ("exit".equalsIgnoreCase(input)) {
-                System.out.println("Application is shutting down...");
-                break;
+            if (System.console() == null) {
+                System.out.println("Running in non-interactive mode. Skipping input.");
+                return; // Or proceed with default behavior
             }
-            System.out.println("Received input: " + input);
+
+            System.out.println("Enter input:");
+            String input = scanner.nextLine();
         }
-        scanner.close();
     }
 }
